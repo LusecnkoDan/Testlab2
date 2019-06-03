@@ -24,7 +24,6 @@ HEADERS +=     \
     showupfirst.h
 
 SOURCES +=     main.cpp \
-    ../app/myfunc.c \
     ../app/show.c \
     ../app/text/append_line.c \
     ../app/text/change_cursor_position.c \
