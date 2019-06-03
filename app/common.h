@@ -27,7 +27,7 @@ void save(text txt, char *filename);
 /**
  * Загружает содержимое указанного файла
  */
-void load(text txt, char *filename);
+void load(text txt, const char *filename);
 /**
  * Капитализация символов, которым предшествует пробел 
  */
