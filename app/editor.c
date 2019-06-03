@@ -20,7 +20,8 @@ int main()
     char cmdline[MAXLINE + 1];
     char *cmd;
     char *arg;
-    
+    char* fget;
+    UNUSED(fget);
     /* Создаем объект для представления текста */
     text txt = create_text();
 
@@ -29,7 +30,7 @@ int main()
         printf("ed > ");
         
         /* Получаем команду */
-        fgets(cmdline, MAXLINE, stdin);
+        fget = fgets(cmdline, MAXLINE, stdin);
 
         /* Извлекаем имя команды */
         if ((cmd = strtok(cmdline, " \n")) == NULL) {
