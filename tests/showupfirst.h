@@ -4,7 +4,7 @@
 TEST(showupfirst, test1) {
 
     FILE *outputFile;
-    TRAVIS ? outputFile = fopen("tests/output/out11.txt", "wb") : outputFile = fopen("/home/daniil/test2/gtest-master/tests/output/out11.txt", "wb");
+    TRAVIS ? outputFile = fopen("tests/output/out11.txt", "wb") : outputFile = fopen("../../test2/gtest-master/tests/output/out11.txt", "wb");
     if (outputFile == NULL) {
         printf("Cannot open file for output");
         FAIL();
@@ -13,7 +13,7 @@ TEST(showupfirst, test1) {
 
     text txt = create_text();
     char inFile[MAXLINE];
-    TRAVIS ? strncpy(inFile, "tests/input/inp11.txt", MAXLINE) : strncpy(inFile, "/home/daniil/test2/gtest-master/tests/input/inp11.txt", MAXLINE);
+    TRAVIS ? strncpy(inFile, "tests/input/inp11.txt", MAXLINE) : strncpy(inFile, "../../test2/gtest-master/tests/input/inp11.txt", MAXLINE);
     load(txt, inFile);
 
     showupfirst(txt);
@@ -21,9 +21,9 @@ TEST(showupfirst, test1) {
     returnStream(outputFile, oldstdOut);
 
     FILE *expectedData;
-    TRAVIS ? expectedData = fopen("tests/expected/expected11.txt", "r") : expectedData = fopen("/home/daniil/test2/gtest-master/tests/expected/expected11.txt", "r");
+    TRAVIS ? expectedData = fopen("tests/expected/expected11.txt", "r") : expectedData = fopen("../../test2/gtest-master/tests/expected/expected11.txt", "r");
     FILE *outputData;
-    TRAVIS ? outputData = fopen("tests/output/out11.txt", "r") : outputData = fopen("/home/daniil/test2/gtest-master/tests/output/out11.txt", "r");
+    TRAVIS ? outputData = fopen("tests/output/out11.txt", "r") : outputData = fopen("../../test2/gtest-master/tests/output/out11.txt", "r");
 
     if (executeTest(expectedData, outputData) == 1) {
         SUCCEED();
@@ -34,7 +34,7 @@ TEST(showupfirst, test1) {
 TEST(showupfirst, test2) {
 
     FILE *outputFile;
-    TRAVIS ? outputFile = fopen("tests/output/out12.txt", "wb") : outputFile = fopen("/home/daniil/test2/gtest-master/tests/output/out12.txt", "wb");
+    TRAVIS ? outputFile = fopen("tests/output/out12.txt", "wb") : outputFile = fopen("../../test2/gtest-master/tests/output/out12.txt", "wb");
     if (outputFile == NULL) {
         printf("Cannot open file for output");
         FAIL();
@@ -43,7 +43,7 @@ TEST(showupfirst, test2) {
 
     text txt = create_text();
     char inFile[MAXLINE];
-    TRAVIS ? strncpy(inFile, "tests/input/inp12.txt", MAXLINE) : strncpy(inFile, "/home/daniil/test2/gtest-master/tests/input/inp12.txt", MAXLINE);
+    TRAVIS ? strncpy(inFile, "tests/input/inp12.txt", MAXLINE) : strncpy(inFile, "../../test2/gtest-master/tests/input/inp12.txt", MAXLINE);
     load(txt, inFile);
 
     showupfirst(txt);
@@ -51,9 +51,9 @@ TEST(showupfirst, test2) {
     returnStream(outputFile, oldstdOut);
 
     FILE *expectedData;
-    TRAVIS ? expectedData = fopen("tests/expected/expected12.txt", "r") : expectedData = fopen("/home/daniil/test2/gtest-master/tests/expected/expected12.txt", "r");
+    TRAVIS ? expectedData = fopen("tests/expected/expected12.txt", "r") : expectedData = fopen("../../test2/gtest-master/tests/expected/expected12.txt", "r");
     FILE *outputData;
-    TRAVIS ? outputData = fopen("tests/output/out12.txt", "r") : outputData = fopen("/home/daniil/test2/gtest-master/tests/output/out12.txt", "r");
+    TRAVIS ? outputData = fopen("tests/output/out12.txt", "r") : outputData = fopen("../../test2/gtest-master/tests/output/out12.txt", "r");
 
     if (executeTest(expectedData, outputData) == 1) {
         SUCCEED();
@@ -64,7 +64,7 @@ TEST(showupfirst, test2) {
 TEST(showupfirst, test3) {
 
     FILE *outputFile;
-    TRAVIS ? outputFile = fopen("tests/output/out13.txt", "wb") : outputFile = fopen("/home/daniil/test2/gtest-master/tests/output/out13.txt", "wb");
+    TRAVIS ? outputFile = fopen("tests/output/out13.txt", "wb") : outputFile = fopen("../../test2/gtest-master/tests/output/out13.txt", "wb");
     if (outputFile == NULL) {
         printf("Cannot open file for output");
         FAIL();
@@ -73,7 +73,7 @@ TEST(showupfirst, test3) {
 
     text txt = create_text();
     char inFile[MAXLINE];
-    TRAVIS ? strncpy(inFile, "tests/input/inp13.txt", MAXLINE) : strncpy(inFile, "/home/daniil/test2/gtest-master/tests/input/inp13.txt", MAXLINE);
+    TRAVIS ? strncpy(inFile, "tests/input/inp13.txt", MAXLINE) : strncpy(inFile, "../../test2/gtest-master/tests/input/inp13.txt", MAXLINE);
     load(txt, inFile);
 
     mwcrsr(txt, 1, 2);
@@ -82,9 +82,9 @@ TEST(showupfirst, test3) {
     returnStream(outputFile, oldstdOut);
 
     FILE *expectedData;
-    TRAVIS ? expectedData = fopen("tests/expected/expected13.txt", "r") : expectedData = fopen("/home/daniil/test2/gtest-master/tests/expected/expected13.txt", "r");
+    TRAVIS ? expectedData = fopen("tests/expected/expected13.txt", "r") : expectedData = fopen("../../test2/gtest-master/tests/expected/expected13.txt", "r");
     FILE *outputData;
-    TRAVIS ? outputData = fopen("tests/output/out13.txt", "r") : outputData = fopen("/home/daniil/test2/gtest-master/tests/output/out13.txt", "r");
+    TRAVIS ? outputData = fopen("tests/output/out13.txt", "r") : outputData = fopen("../../test2/gtest-master/tests/output/out13.txt", "r");
 
     if (executeTest(expectedData, outputData) == 1) {
         SUCCEED();
@@ -95,7 +95,7 @@ TEST(showupfirst, test3) {
 TEST(showupfirst, test4) {
 
     FILE *outputFile;
-    TRAVIS ? outputFile = fopen("tests/output/out14.txt", "wb") : outputFile = fopen("/home/daniil/test2/gtest-master/tests/output/out14.txt", "wb");
+    TRAVIS ? outputFile = fopen("tests/output/out14.txt", "wb") : outputFile = fopen("../../test2/gtest-master/tests/output/out14.txt", "wb");
     if (outputFile == NULL) {
         printf("Cannot open file for output");
         FAIL();
@@ -104,7 +104,7 @@ TEST(showupfirst, test4) {
 
     text txt = create_text();
     char inFile[MAXLINE];
-    TRAVIS ? strncpy(inFile, "tests/input/inp14.txt", MAXLINE) : strncpy(inFile, "/home/daniil/test2/gtest-master/tests/input/inp14.txt", MAXLINE);
+    TRAVIS ? strncpy(inFile, "tests/input/inp14.txt", MAXLINE) : strncpy(inFile, "../../test2/gtest-master/tests/input/inp14.txt", MAXLINE);
     load(txt, inFile);
 
     showupfirst(txt);
@@ -112,9 +112,9 @@ TEST(showupfirst, test4) {
     returnStream(outputFile, oldstdOut);
 
     FILE *expectedData;
-    TRAVIS ? expectedData = fopen("tests/expected/expected14.txt", "r") : expectedData = fopen("/home/daniil/test2/gtest-master/tests/expected/expected14.txt", "r");
+    TRAVIS ? expectedData = fopen("tests/expected/expected14.txt", "r") : expectedData = fopen("../../test2/gtest-master/tests/expected/expected14.txt", "r");
     FILE *outputData;
-    TRAVIS ? outputData = fopen("tests/output/out14.txt", "r") : outputData = fopen("/home/daniil/test2/gtest-master/tests/output/out14.txt", "r");
+    TRAVIS ? outputData = fopen("tests/output/out14.txt", "r") : outputData = fopen("../../test2/gtest-master/tests/output/out14.txt", "r");
 
     if (executeTest(expectedData, outputData) == 1) {
         SUCCEED();
